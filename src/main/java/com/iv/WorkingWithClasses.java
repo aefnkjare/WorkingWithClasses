@@ -7,12 +7,13 @@ public class WorkingWithClasses {
     public static void main(String[] args){
         Person isaiah =new Person("Lil Zay Dawg", 21, "08-31-2001", false, "123-45-6789");
 
+        isaiah.setName("Big Zay Dawg");
 //        isaiah.name = "Lil Zay Dawg";
 //        isaiah.age = 21;
 //        isaiah.birthday = "08-31-2001";
 //        isaiah.hasTattoo = false;
 
-        System.out.println(isaiah);
+        System.out.println(isaiah.getName());
 
 //        Person braynel =new Person();
 //        braynel.name = "Braynel";
@@ -42,5 +43,7 @@ class Person {
         return this.name;
     }
 
-
+    public void setName(String name){
+        this.name = name;
+    }
 }

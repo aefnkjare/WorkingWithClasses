@@ -5,13 +5,14 @@ import java.time.LocalDate;
 //COOKIE CUTTER ANALOGY//
 public class WorkingWithClasses {
     public static void main(String[] args){
-        Person isaiah =new Person();
-        isaiah.name = "Lil Zay Dawg";
-        isaiah.age = 21;
-        isaiah.birthday = "08-31-2001";
-        isaiah.hasTattoo = false;
+        Person isaiah =new Person("Lil Zay Dawg", 21, "08-31-2001", false, "123-45-6789");
 
-        System.out.println(isaiah.name);
+//        isaiah.name = "Lil Zay Dawg";
+//        isaiah.age = 21;
+//        isaiah.birthday = "08-31-2001";
+//        isaiah.hasTattoo = false;
+
+        System.out.println(isaiah);
 
 //        Person braynel =new Person();
 //        braynel.name = "Braynel";
@@ -20,15 +21,26 @@ public class WorkingWithClasses {
 
 class Person {
     // Properties
-    String name;
-    int age;
-    String birthday;
-    Boolean hasTattoo;
+    private String name;
+    private int age;
+    private String birthday;
+    private boolean hasTattoo;
+    private String ssn;
 
 
-    // Constructor
+    // Constructor mathod
+    public Person(String name, int age, String birthday, boolean hasTattoo, String ssn){
+        this.name = name;
+        this.age = age;
+        this.birthday = birthday;
+        this.hasTattoo = hasTattoo;
+        this.ssn = ssn;
+    }
 
-    // Methods
+    // Methods- Getters and Setter
+    public String getName(){
+        return this.name;
+    }
 
 
 }
